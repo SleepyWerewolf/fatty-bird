@@ -10,4 +10,8 @@ export default Service.extend({
     this._super(...arguments);
     this.set('currentScore', 0);
   },
+
+  addToScore(increaseToScore) {
+    this.set('currentScore', this.get('currentScore') + increaseToScore);
+  },
 });
